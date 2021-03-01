@@ -176,6 +176,11 @@ namespace CrearOtro_Regitro_Con_Detalle.UI
             bool paso = false;
             if (DetallesDataGridView.DataSource != null)
                 this.Detalle = (List<RolesDetalle>)DetallesDataGridView.DataSource;
+            if(PermisosComboBox.Text == string.Empty)
+            {
+                MessageBox.Show("Debes de seleccionar un permiso para continuar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             this.Detalle.Add(
                 new RolesDetalle(
@@ -187,8 +192,9 @@ namespace CrearOtro_Regitro_Con_Detalle.UI
             );
             CargarGrid();
             PermisosComboBox.Focus();
-            //PermisosComboBox.Items.Clear();
             AsignadoCheckBox.Checked = paso;
+
+
         }
 
         private void RemoverButton_Click(object sender, EventArgs e)

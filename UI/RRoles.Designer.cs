@@ -187,10 +187,10 @@ namespace CrearOtro_Regitro_Con_Detalle.UI
             // AgregarButton
             // 
             this.AgregarButton.Image = ((System.Drawing.Image)(resources.GetObject("AgregarButton.Image")));
-            this.AgregarButton.Location = new System.Drawing.Point(469, 22);
+            this.AgregarButton.Location = new System.Drawing.Point(480, 43);
             this.AgregarButton.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.AgregarButton.Name = "AgregarButton";
-            this.AgregarButton.Size = new System.Drawing.Size(131, 67);
+            this.AgregarButton.Size = new System.Drawing.Size(120, 41);
             this.AgregarButton.TabIndex = 11;
             this.AgregarButton.Text = "Agregar";
             this.AgregarButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
