@@ -41,5 +41,7 @@ namespace CrearOtro_Regitro_Con_Detalle.UI
             usuarios.MdiParent = this;
             usuarios.Show();
         }
+
+        
     }
 }
