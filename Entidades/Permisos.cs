@@ -12,15 +12,13 @@ namespace CrearOtro_Regitro_Con_Detalle.Entidades
     {
         [Key]
         public int PermisoId { get; set; }
-        public string Permiso { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
+        public int VecesAsignado { get; set; }
+
 
         [ForeignKey("PermisoId")]
         public virtual Permisos permiso { get; set; }
 
-        public Permisos()
-        {
-            PermisoId = 0;
-            Permiso = string.Empty;
-        }
     }
 }
